@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FEARLESS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Orbitron',sans-serif;
+}
+
+body{
+    background:#030303;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Background */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:
+    radial-gradient(circle at top left,#00ff9d22,transparent 30%),
+    radial-gradient(circle at bottom right,#00ff9d11,transparent 30%);
+    z-index:-1;
+}
+
+/* Navbar */
+
+nav{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #00ff9d33;
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:32px;
+    font-weight:900;
+    color:#00ff9d;
+    text-shadow:0 0 20px #00ff9d;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00ff9d;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:95px;
+    color:#00ff9d;
+    text-shadow:
+    0 0 10px #00ff9d,
+    0 0 30px #00ff9d,
+    0 0 60px #00ff9d;
+    animation:glow 2s infinite alternate;
+}
+
+.hero p{
+    max-width:700px;
+    margin-top:20px;
+    color:#d4d4d4;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* Glow Animation */
+
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #00ff9d;
+    }
+
+    to{
+        text-shadow:
+        0 0 20px #00ff9d,
+        0 0 50px #00ff9d,
+        0 0 90px #00ff9d;
+    }
+}
+
+/* Buttons */
+
+.btns{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.btn{
+    padding:15px 30px;
+    background:#00ff9d;
+    color:black;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:700;
+    transition:0.3s;
+    box-shadow:0 0 20px #00ff9d66;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    background:white;
+}
+
+/* Cards */
+
+.container{
+    width:100%;
+    padding:70px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#0d0d0d;
+    border:1px solid #00ff9d33;
+    border-radius:20px;
+    padding:30px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00ff9d55;
+}
+
+.card h2{
+    color:#00ff9d;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#c8c8c8;
+    line-height:1.7;
+}
+
+/* About */
+
+.about{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.about h2{
+    font-size:45px;
+    color:#00ff9d;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    color:#ccc;
+    line-height:1.9;
+}
+
+/* Chat */
+
+.chat{
+    padding:70px 8%;
+    text-align:center;
+}
+
+.chat h2{
+    font-size:40px;
+    color:#00ff9d;
+    margin-bottom:20px;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    padding:30px;
+    text-align:center;
+    border-top:1px solid #00ff9d22;
+    color:#777;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:60px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav>
+
+<div class="logo">FEARLESS</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Gaming</a></li>
+<li><a href="#">Social</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>FEARLESS</h1>
+
+<p>
+Hacker Mindset ⚡ Gamer Soul 🎮 <br>
+Welcome to my digital world. <br>
+Connect with me through Instagram, WhatsApp and Gaming IDs.
+</p>
+
+<div class="btns">
+
+<a class="btn"
+href="https://instagram.com/shwxy_mo9rul"
+target="_blank">
+Instagram
+</a>
+
+<a class="btn"
+href="https://whatsapp.com/channel/0029VbBbuWW3gvWUEiNNhu0H"
+target="_blank">
+WhatsApp Channel
+</a>
+
+</div>
+
+</section>
+
+<!-- Cards -->
+
+<section class="container">
+
+<div class="card">
+<h2>Instagram</h2>
+
+<p>
+Follow my edits, reels and gaming clips. <br><br>
+
+Username: @shwxy_mo9rul
+</p>
+</div>
+
+<div class="card">
+<h2>WhatsApp Channel</h2>
+
+<p>
+Join my official WhatsApp channel for updates,
+gaming clips and announcements.
+</p>
+</div>
+
+<div class="card">
+<h2>Game ID</h2>
+
+<p>
+BGMI / Free Fire / COD <br><br>
+
+ID: 3228913673
+</p>
+</div>
+
+</section>
+
+<!-- About -->
+
+<section class="about">
+
+<h2>I AM FEARLESS</h2>
+
+<p>
+I explore. I play. I create. <br><br>
+
+This is not just a name, this is a brand. <br>
+Fearless by mindset. Gamer by passion.
+</p>
+
+</section>
+
+<!-- Chat -->
+
+<section class="chat">
+
+<h2>CHAT WITH US</h2>
+
+<div class="btns">
+
+<a class="btn"
+href="https://wa.me/918101476602"
+target="_blank">
+
+CHAT ON WHATSAPP
+
+</a>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+© 2026 FEARLESS | Hacker x Gamer UI
+
+</footer>
+
+</body>
+</html>
